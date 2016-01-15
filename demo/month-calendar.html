@@ -1,0 +1,29 @@
+<div class="cal-containt" >
+  
+        <table class="table table-borderless">
+						  <tbody>
+						    <tr>
+						        <td><a data-ng-click="Prev()"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="float:left;"></span></a></td>
+						        <td align="center"><span >{{Calendar.cMonth}} {{Calendar.cYear}}</span></td>
+						        <td><a data-ng-click="Next()"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="float:right;"></span></a></td>
+						    </tr>
+						  </tbody>
+				</table>
+  
+        <div class="table-responsive">
+				      <table class="table table-borderless">
+						  <thead>
+						    <tr>
+						      <th ng-repeat="day in Calendar.weekDaysTitle">{{day}}</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr ng-repeat="week in Calendar.month.weeks">
+						      <td ng-repeat="date in week.days" ng-class="(date.isCurrentMonth ? 'cMonth' : 'NotcMonth')+ ' ' + (date.isToday ? 'cToday' : 'NotcToday')" ng-click="select()">{{date.day}}</td>
+						    </tr>
+						    
+						  </tbody>
+						</table>
+		    </div>
+
+</div>

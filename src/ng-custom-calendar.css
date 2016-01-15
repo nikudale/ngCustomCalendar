@@ -1,0 +1,13 @@
+.table > thead > tr > .success, .table > tbody > tr > .success, .table > tfoot > tr > .success, .table > thead > .success > td, .table > tbody > .success > td, .table > tfoot > .success > td, .table > thead > .success > th, .table > tbody > .success > th, .table > tfoot > .success > th {position:static;}
+
+.modal-dialog { height : 500px !important; width : 300px }
+.cal-containt { width : 80%; margin: 10px; align: center;}
+.table > thead > tr > th { text-align : center; }
+.table > tbody > tr > td { text-align : center; }
+.table.table-borderless td, .table.table-borderless th {
+    border: 0 !important;
+}
+td.cMonth { color : black;}
+td.NotcMonth { color : Grey;}
+td.cToday { color : blue; border:1px solid black !important}
+td.NotcToday {  border: 0px }
